@@ -8,3 +8,12 @@ ar = a*c
 ct = ar/2
 
 print ('Com {}m de altura e {}m de comprimento, sua parede apresenta uma área total de {}m², sendo necessários {} litros de tinta para pintá-la por completo.' .format(a, c, ar, ct))
+
+print ('Correção do professor: ')
+
+larg = float (input ('Largura da parede: '))
+alt = float (input ('Altura da parede: '))
+área = larg*alt
+print ('Sua parede tem a dimensão de {}x{} e sua área é de {}m²' .format (larg, alt, área))
+tinta = área / 2
+print ('Para pintar essa parede, você precisará de {}l de tinta.' .format (tinta))

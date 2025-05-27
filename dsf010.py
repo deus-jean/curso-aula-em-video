@@ -4,3 +4,9 @@ r = int (input('Para saber quantos dólares você pode comprar, me informe quant
 d = r/3.27
 
 print ('Com base no seu saldo atual de R$ {}, será possível adquirir US$ {}' .format (r, d))
+
+print ('Correção do professor: ')
+
+real = float (input ('Quanto você tem na carteira? R$ '))
+dolar = real/5.66
+print ('Com R${:.2f} você pode comprar US${:.2f}' .format (real, dolar))
