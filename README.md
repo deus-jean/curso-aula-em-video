@@ -114,3 +114,19 @@ Exibição do novo salário.
 
 Atualização 27.05.2025: hoje assisti as aulas de correção dos exercícios 005 ao 013. Estou subindo os arquivos .py com as correções feitas pelo professor.
 PS.: ao mencionar correção, não significa que seja algo direto, feito especialmente sobre o meu código, mas sim como ele havia pensado no resultado do problema proposto.
+
+dsf014 - Escreva um programa que converta uma temperatura digitada em °C e converta para °F.            
+Proposta: Fazer o aluno praticar a leitura de dados numéricos de ponto flutuante (float).
+Aplicar uma fórmula matemática específica para a conversão de unidades de temperatura (F = 9×C/5+32).
+Ilustrar e reforçar o conceito da ordem de precedência dos operadores aritméticos. O professor intencionava mostrar que, na fórmula de conversão, a multiplicação (9*c) e a divisão (/5) são realizadas antes da adição (+32) devido às regras de precedência do Python, tornando parênteses explícitos (como em ((9*c)/5)+32) funcionalmente desnecessários.
+
+
+Desenvolvimento: Utilização da função input() para receber um valor e da função float() para convertê-lo para um número de ponto flutuante, adequado para temperaturas que podem ter casas decimais. 
+Compreensão prática da ordem de precedência dos operadores, percebendo que Python avalia * e / antes de +, o que permite escrever a expressão de forma mais concisa sem alterar o resultado.
+
+dsf015 - Escreva um programa que pergunte a quantidade de KM percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$60 por dia e R$0,15 por KM rodado.                  
+Proposta: O desafio visa reforçar conceitos fundamentais de Python, como a interação com o usuário (`input`), a conversão de tipos de dados (`int` e `float`), a realização de operações aritméticas básicas, a atribuição de variáveis e a formatação de saída (`print` com `.format`).
+
+Desenvolvimento: Quais variáveis são necessárias? Quais cálculos devem ser feitos?
+Executar o código com diferentes valores para verificar se funciona.
+
