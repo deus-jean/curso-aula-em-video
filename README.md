@@ -130,3 +130,12 @@ Proposta: O desafio visa reforçar conceitos fundamentais de Python, como a inte
 Desenvolvimento: Quais variáveis são necessárias? Quais cálculos devem ser feitos?
 Executar o código com diferentes valores para verificar se funciona.
 
+dsf016 - Crie um programa que leia um número real qualquer pelo teclado e mostre na tela a sua porção inteira. Exemplo: ' \
+'Digite um número: 6.127. O número 6.127 tem a parte inteira 6.        
+dsf017 - Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo, calcule e mostre o comprimento da hipotenusa.          
+dsf018 - Faça um programa que leia um ângulo qualquer e mostre na tela o valor do seno, cosseno e tangente desse ângulo.        
+dsf019 - O professor quer sortear um dos seus quatro alunos para apagar o quadro. Faça um programa que ajude ele, lendo o nome deles e escrevendo o nome do escolhido.        
+dsf020 - O mesmo professor do desafio anterior quer sortear a ordem de apresentação de trabalhos dos alunos. Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada.      
+dsf021 - Faça um programa em Python que abra e reproduza o áudio de um arquivo MP3.      
+
+
