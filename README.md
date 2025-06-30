@@ -131,11 +131,62 @@ Desenvolvimento: Quais variáveis são necessárias? Quais cálculos devem ser f
 Executar o código com diferentes valores para verificar se funciona.
 
 dsf016 - Crie um programa que leia um número real qualquer pelo teclado e mostre na tela a sua porção inteira. Exemplo: ' \
-'Digite um número: 6.127. O número 6.127 tem a parte inteira 6.        
-dsf017 - Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo, calcule e mostre o comprimento da hipotenusa.          
-dsf018 - Faça um programa que leia um ângulo qualquer e mostre na tela o valor do seno, cosseno e tangente desse ângulo.        
-dsf019 - O professor quer sortear um dos seus quatro alunos para apagar o quadro. Faça um programa que ajude ele, lendo o nome deles e escrevendo o nome do escolhido.        
-dsf020 - O mesmo professor do desafio anterior quer sortear a ordem de apresentação de trabalhos dos alunos. Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada.      
-dsf021 - Faça um programa em Python que abra e reproduza o áudio de um arquivo MP3.      
+'Digite um número: 6.127. O número 6.127 tem a parte inteira 6.            
+Proposta:  
+Este exercício busca introduzir o conceito de parte inteira de um número real. Ao trabalhar com floats, o aluno aprende a converter a entrada de dados e a utilizar ferramentas da biblioteca padrão para manipular valores numéricos.
 
+Desenvolvimento:  
+O programa importa a função trunc() do módulo math para remover a parte decimal sem arredondar. Em seguida, lê um valor real com input(), converte-o para float e aplica trunc() para obter apenas a porção inteira. Por fim, exibe ao usuário tanto o número original quanto sua parte inteira, usando f-strings ou o método format para formatar a saída de forma clara.  
+
+dsf017 - Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo, calcule e mostre o comprimento da hipotenusa.          
+Proposta:  
+Este exercício explora o Teorema de Pitágoras em um problema do mundo real, reforçando leitura de valores numéricos em ponto flutuante, aplicação de operadores aritméticos e introdução a funções especializadas da biblioteca padrão. O aluno aprende a decompor o problema em etapas: capturar dados, processar a fórmula e formatar o resultado de modo legível.
+
+Desenvolvimento:  
+O programa solicita ao usuário os comprimentos dos catetos oposto e adjacente, convertendo cada entrada para float. Para calcular a hipotenusa, faz uso da função hypot() do módulo math, que recebe os dois catetos e retorna diretamente o comprimento da hipotenusa. Por fim, formata o resultado para exibir o valor com duas casas decimais, garantindo precisão e clareza na apresentação.
+
+Feedback do professor:  
+Foi sugerido substituir a expressão manual de raiz quadrada (co**2 + ca**2)**0.5 pela função math.hypot(), melhorando legibilidade e confiabilidade do cálculo, e padronizar a saída com duas casas decimais para uma apresentação mais profissional.  
+
+dsf018 - Faça um programa que leia um ângulo qualquer e mostre na tela o valor do seno, cosseno e tangente desse ângulo.        
+Proposta:  
+Apresentar as principais funções trigonométricas da biblioteca `math` (sin, cos, tan) em um exercício prático. Reforçar a necessidade de converter graus em radianos antes de aplicar as funções trigonométricas e exercitar a leitura de valores de ponto flutuante.
+
+Desenvolvimento:  
+O programa lê do usuário um ângulo em graus (float), utiliza `math.radians()` para convertê-lo em radianos e depois calcula seno, cosseno e tangente com `sin()`, `cos()` e `tan()`. Cada resultado é formatado com duas casas decimais para melhorar a legibilidade da saída.
+
+Feedback do professor:  
+A implementação atende integralmente ao enunciado, usando corretamente a conversão para radianos, as funções trigonométricas e a formatação de saída. Nenhuma alteração adicional foi sugerida.  
+
+dsf019 - O professor quer sortear um dos seus quatro alunos para apagar o quadro. Faça um programa que ajude ele, lendo o nome deles e escrevendo o nome do escolhido.        
+Proposta:  
+Este exercício apresenta o uso do módulo random para seleção aleatória. O aluno reforça a leitura de várias entradas pelo usuário, a manipulação de listas em Python e a extração de um elemento de maneira randômica.
+
+Desenvolvimento:  
+O programa solicita quatro nomes via input(), armazena-os em uma lista e utiliza choice() do módulo random para sortear um dos alunos. Exibe então o nome escolhido com uma mensagem clara.
+
+Feedback do professor:  
+A implementação está correta, usando random.choice() e exibindo o resultado conforme esperado, sem ajustes necessários.
+
+dsf020 - O mesmo professor do desafio anterior quer sortear a ordem de apresentação de trabalhos dos alunos. Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada.      
+Proposta:  
+Este exercício amplia o uso do módulo random para embaralhar sequências, reforçando a manipulação de listas e a captação de múltiplas entradas do usuário. O aluno vivencia como reorganizar elementos de forma randômica para resolver um problema prático: definir uma ordem aleatória de apresentação.
+
+Desenvolvimento:  
+O programa solicita quatro nomes via input() e os armazena em uma lista. Em seguida, importa shuffle() do módulo random para reordenar a lista de maneira aleatória. Por fim, exibe a lista já embaralhada, indicando a ordem de apresentação dos alunos.
+
+Feedback do professor:  
+A implementação faz uso correto de random.shuffle() e atende ao enunciado sem necessidade de ajustes.  
+
+dsf021 - Faça um programa em Python que abra e reproduza o áudio de um arquivo MP3.           
+dsf021 – Reprodução de áudio MP3 com Python
+
+Proposta:  
+Este exercício apresenta ao aluno o uso de bibliotecas externas para tarefas multimídia, destacando a instalação de pacotes via pip e o manuseio de arquivos de áudio em Python. O objetivo é mostrar como integrar recursos do sistema operacional (leitura de arquivos) com módulos especializados para reprodução sonora.
+
+Desenvolvimento:  
+O programa importa o pacote pygame, inicializa o mixer de áudio (`pygame.init()` e `pygame.mixer`), carrega um arquivo MP3 a partir do caminho fornecido no código e executa a reprodução com `pygame.mixer.music.play()`. Para manter o script ativo durante a reprodução, utiliza `input()` e `pygame.event.wait()`, garantindo que o áudio seja tocado até o fim antes do encerramento do programa. É importante instalar o pygame (`pip install pygame`) e certificar-se de que o arquivo MP3 esteja no diretório correto ou informar o caminho completo.
+
+Feedback do professor:  
+A implementação atende ao enunciado, usando corretamente o módulo pygame para carregar e reproduzir o arquivo MP3, e mantém o programa ativo até a conclusão da reprodução. Não foram sugeridas alterações adicionais.  
 
